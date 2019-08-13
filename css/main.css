@@ -527,7 +527,7 @@ position: relative;
   line-height: 150px;
   font-weight: 900;
   text-transform: uppercase;
-  display: inline-table;
+  display: inline-block;
 }
 .animated-text.white{
   color: #fff;
@@ -615,6 +615,7 @@ position: relative;
 /*core-features*/
 .core-features{
   padding: 100px 0;
+  overflow: hidden;
 }
 .features-row{
   display: flex;
@@ -892,6 +893,9 @@ position: relative;
     display: inline-block;
     width: 50px;
   }
+  .bootstrap-button img{
+    width: 100%;
+  }
   .footer-title{
     font-size: 40px;
   }
@@ -922,10 +926,28 @@ position: relative;
   }
   .navbar-nav > li > a i{
     float: right;
+    padding-top: 15px;
   }
   .sub-menu {
     float: left;
     width: 100%;
+  } 
+  .rating{
+    display: block;
   }
-  
+  .rating ul{
+    display: block;
+  }
+  .return-top img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .bootstrap-button{
+    display: none;
+  }
+  .main-banner{
+    padding-top: 10px;
+  }
 }
